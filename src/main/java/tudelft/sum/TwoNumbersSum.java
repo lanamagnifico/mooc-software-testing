@@ -22,7 +22,12 @@ class TwoNumbersSum {
                 complement = 1;
                 total -= 10;
             }
+
             result.add(i, total);
+
+        }
+        if (complement>0){
+            result.add(Math.max(first.size(), second.size()), complement);
         }
 
         Collections.reverse(result);
